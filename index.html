@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D3.js Shapes Example</title>
+  <!-- Include D3.js -->
+  <script src="node_modules/d3/dist/d3.min.js"></script>
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+<h1>QUILT - O - MATIC</h1>
+<section id="main">
+<section class="four-block-container">
+<h2>FOUR-SQUARE BLOCK</h2>
+<div id="four-block">
+  <svg class="chart-container" width="50%" height="50%"></svg>
+  <svg class="chart-container" width="50%" height="50%"></svg>
+  <svg class="chart-container" width="50%" height="50%"></svg>
+  <svg class="chart-container" width="50%" height="50%"></svg>
+
+
+</div>
+</section>
+<div>
+    <h2>EDIT SQUARE</h2>
+<section class="controls-container">
+<div id="main-block"> 
+    <svg class="chart-container" width="100%" height="100%">
+        
+    </svg> </div>
+<div class="control">
+    <div id="control__shape-selector-empty">
+    <p style="text-align:center;">Click on a square in the edit square panel to get started</p>
+</div>
+    <div id="control__shape-selector">
+<p>SELECT SHAPE</p>
+<h2 class="shape-selector-text" id="shape-selector__rectangle">Square</h2>
+<h2 class="shape-selector-text" id="shape-selector__triangle">Triangle</h2>
+<h2 class="shape-selector-text"id="shape-selector__circle">Circle</h2>
+<h2 class="shape-selector-text" id="shape-selector__none">No Shape</h2>
+<div style="display:flex;flex-direction:row; gap:1em;">
+<p>SHAPE COLOR</p>
+<input id="shape-selector__color-picker" type="color" value="#ff0000" />
+</div>
+<div style="display:flex;flex-direction:row; gap: 1em;">
+<p>BACKGROUND COLOR</p>
+<input id="shape-selector__background-picker" type="color" value="#ff0000" />
+</div>
+</div>
+</div>
+    <div class="box"style="position: absolute; top: 0; left:0"></div>
+    <div class="box"style="position: absolute; top: 0; left:50%"></div>
+    <div class="box"style="position: absolute; top: 25%; left:0"></div>
+    <div class="box"style="position: absolute; top: 25%; left:50%"></div>
+</div>
+
+</section>
+</section>
+
+  <script src="script.js"></script>
+  <h2>SUBMIT QUILT</h2>
+</body>
+</html>
